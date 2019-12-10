@@ -1,0 +1,101 @@
+
+/* This will apply the font famly to all text. */
+* { 
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+
+    /* This didn't close header/browser gap.
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    Neither did this
+    box-sizing: border-box; */
+
+    
+    
+}
+
+
+.clearfix:before,
+.clearfix::after {
+    content: " ";
+    display: block;
+}
+
+.clearfix::after {
+    clear: both;
+
+}
+.header {
+    width: 104%;
+    background-color: #ffffff;;
+    top:-5px;
+    left: -2%;
+    border-style: groove;
+    border-width: 5px;
+    border-bottom-color: #cccccc;
+    position: fixed;
+       
+}
+#header-content {
+    margin: 0 auto;
+    width: 940px;
+}
+
+header {
+    width: 260px;
+    padding: 10px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border-bottom-color: #cccccc;
+
+}
+
+
+#profile-picture {
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+}
+#links {
+    margin-top: -80px;
+    float: right
+}
+/* contains the main content elements */
+.wrapper {
+    width: 960px;
+    background-color: #ffffff;
+    margin: 120px auto;
+    border-width: 5px;
+    border-style: groove;
+    border-color: #dddddd;
+}
+body {
+    background-image: url("../images/swirl_pattern.png");
+}
+/* CSS dictates the last instruction is followed, so after the apply-all soluction we have to target h1 and h2 */
+h1, h2 {
+    font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
+}
+h2 { width: 100%;
+    border-bottom: 3px groove #dddddd;
+    padding-bottom: 20px;
+}
+p { 
+    line-height: 2;
+    color: #777777;
+}
+#bio {
+    margin-top: 30px;
+    margin-right: 10px;
+}
+footer {
+    height: 6%;
+    width: 104%;
+    left: -2%;
+    position: fixed;
+    top: 94%;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+}
