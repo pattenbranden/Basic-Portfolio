@@ -63,6 +63,7 @@ header {
 #links {
     float: right;
     color: #777777;
+    top: 50px;
 }
 /* contains the main content elements */
 .wrapper {
