@@ -27,14 +27,12 @@
 
 }
 .header {
-    width: 104%;
-    background-color: #ffffff;;
-    top:-5px;
-    left: -2%;
-    border-style: groove;
-    border-width: 5px;
-    border-bottom-color: #cccccc;
+    width: 100%;
+    border-bottom: 3px solid #cccccc;
+    background-color: #ffffff;
     position: fixed;
+    top: 0;
+    left: 0;
        
 }
 #header-content {
@@ -43,11 +41,16 @@
 }
 
 header {
+    top: 30px;
+    left: -10px;
+    margin-top: 10px;
     width: 260px;
-    padding: 10px;
+    padding-top: 5px;
     background-color: #4aaaa5;
     color: #ffffff;
     border-bottom-color: #cccccc;
+    text-align: center;
+    position: relative;
 
 }
 
@@ -58,17 +61,22 @@ header {
     margin-right: 20px;
 }
 #links {
-    margin-top: -80px;
-    float: right
+    float: right;
+    color: #777777;
 }
 /* contains the main content elements */
 .wrapper {
     width: 960px;
     background-color: #ffffff;
     margin: 120px auto;
-    border-width: 5px;
-    border-style: groove;
+    border-width: 1px;
+    border-style: solid;
     border-color: #dddddd;
+    padding: 10px;
+    border-radius: 15px 50px 30px;
+}
+#message {
+    height: 200px;
 }
 body {
     background-image: url("../images/swirl_pattern.png");
@@ -76,10 +84,12 @@ body {
 /* CSS dictates the last instruction is followed, so after the apply-all soluction we have to target h1 and h2 */
 h1, h2 {
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
+    font-size: 30px;
 }
 h2 { width: 100%;
-    border-bottom: 3px groove #dddddd;
+    border-bottom: 3px solid #dddddd;
     padding-bottom: 20px;
+    color: #4aaaa5;
 }
 p { 
     line-height: 2;
@@ -90,12 +100,22 @@ p {
     margin-right: 10px;
 }
 footer {
-    height: 6%;
+    height: 60px;
     width: 104%;
     left: -2%;
     position: fixed;
-    top: 94%;
+    bottom: 0px;
     text-align: center;
     border-top: 8px solid #4aaaa5;
     background-color: #666666;
+}
+input {
+    width: 99.7%;
+    margin: 10px;
+}
+input[type=text]:focus {
+    border: 1px solid black;
+}
+input[name=message] {
+    height: 300px;
 }
