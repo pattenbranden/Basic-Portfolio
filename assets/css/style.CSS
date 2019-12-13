@@ -1,30 +1,18 @@
-
 /* This will apply the font famly to all text. */
-* { 
+* {
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
-
-    /* This didn't close header/browser gap.
-    margin: 0;
+   /* This didn't close header/browser gap. margin: 0;
     padding: 0;
     border: 0;
-
-    Neither did this
-    box-sizing: border-box; */
-
-    
-    
+    Neither did this box-sizing: border-box;
+    */
 }
-
-
-.clearfix:before,
-.clearfix::after {
+.clearfix:before, .clearfix::after {
     content: " ";
     display: block;
 }
-
-.clearfix::after {
-    clear: both;
-
+body {
+    background-image: url("../images/swirl_pattern.png");
 }
 /* the nav bar and contentents */
 .header {
@@ -36,13 +24,11 @@
     left: 0;
     margin-bottom: 20px;
     z-index: 1;
-       
 }
 #header-content {
     margin: 0 auto;
     width: 940px;
 }
-
 header {
     top: 30px;
     left: -10px;
@@ -54,14 +40,6 @@ header {
     border-bottom-color: #cccccc;
     text-align: center;
     position: relative;
-
-}
-
-
-#profile-picture {
-    width: 250px;
-    float: left;
-    margin-right: 20px;
 }
 #links {
     float: right;
@@ -83,22 +61,20 @@ header {
 .projects {
     width: 50%;
 }
-
-body {
-    background-image: url("../images/swirl_pattern.png");
-}
 /* CSS dictates the last instruction is followed, so after the apply-all soluction we have to target h1 and h2 */
 h1, h2 {
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
     font-size: 30px;
 }
 /* h2 is used as a page title */
-h2 { width: 100%;
+h2 {
+    width: 100%;
     border-bottom: 3px solid #dddddd;
     padding-bottom: 20px;
     margin-bottom: 20px;
     color: #4aaaa5;
 }
+/* h3 is used to title projects in the portfolio */
 h3 {
     margin: 0;
     width: auto;
@@ -112,7 +88,7 @@ h3 {
     position: relative;
     top: 200px;
 }
-p { 
+p {
     line-height: 2;
     color: #777777;
 }
@@ -120,6 +96,12 @@ p {
     margin-top: 30px;
     margin-right: 10px;
 }
+#profile-picture {
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+}
+/* all form styles */
 #contact-form {
     margin: 30px;
     clear: both;
@@ -128,17 +110,6 @@ p {
 }
 #message {
     height: 200px;
-}
-footer {
-    height: 60px;
-    width: 104%;
-    left: -2%;
-    position: fixed;
-    bottom: 0px;
-    text-align: center;
-    border-top: 8px solid #4aaaa5;
-    background-color: #666666;
-    z-index: 1;
 }
 input {
     width: 96.5%;
@@ -152,7 +123,7 @@ input[type=text]:focus {
 input[name=message] {
     height: 300px;
 }
-/* used as to tag the items in the gallery */
+/* used to tag the items in the gallery */
 .item {
     position: relative;
     left: 82px;
@@ -169,4 +140,16 @@ input[name=message] {
 }
 .item-info {
     text-align: center;
+}
+/* footer is the footer  */
+footer {
+    height: 60px;
+    width: 104%;
+    left: -2%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    z-index: 1;
 }
